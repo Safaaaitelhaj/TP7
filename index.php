@@ -3,37 +3,38 @@
 <head> 
     <meta charset="UTF-8"> 
     <title>Inscription</title> 
-    <link rel="stylesheet" href="style.css">
 </head> 
 <body> 
+<center>
+    
+<h2>Inscription</h2> 
 
-    <h2>Inscription</h2> 
+<form action="affichage.php" method="POST"> 
+    <label>Nom :</label> <br>
+    <input type="text" name="nom" required> <br>
 
-    <form action="affichage.php" method="POST"> 
-        <label>Nom :</label> 
-        <input type="text" name="nom" required> 
+    <label>Prénom :</label> <br>
+    <input type="text" name="prenom" required> <br>
 
-        <label>Prénom :</label> 
-        <input type="text" name="prenom" required> 
+    <label>Groupe :</label> <br>
+    <input type="number" name="group" required min="0"> <br>
 
-        <label>Groupe :</label> 
-        <input type="number" name="group" required min="0"> 
+    <label>Sujet :</label> <br>
+    <input type="text" name="sujet" required> <br>
 
-        <label>Sujet :</label> 
-        <input type="text" name="sujet" required> 
+    <label>Date début :</label> <br>
+    <input type="date" name="date_debut" required> <br>
 
-        <label>Date début :</label> 
-        <input type="date" name="date_debut" required> 
+    <label>Date fin :</label> <br>
+    <input type="date" name="date_fin" required> <br>
 
-        <label>Date fin :</label> 
-        <input type="date" name="date_fin" required> 
+    <label>Encadrement :</label> <br>
+    <input type="text" name="encadrement" required> <br>
 
-        <label>Encadrement :</label> 
-        <input type="text" name="encadrement" required> 
+    <input type="submit" value="Envoyer"> 
+    <input type="reset" value="Annuler"> 
+</form> 
 
-        <input type="submit" value="Envoyer"> 
-        <input type="reset" value="Annuler"> 
-    </form> 
-
+</center>
 </body> 
 </html>
